@@ -173,3 +173,6 @@ export default function App() {
     </div>
   );
 }
+
+{/* Hidden anchor targets for crawler navigation */}
+<div id="instagram" className="sr-only" /><div id="journal" className="sr-only" /><div id="legal" className="sr-only" />
