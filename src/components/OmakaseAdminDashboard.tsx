@@ -132,7 +132,7 @@ export default function OmakaseAdminDashboard({ onExit }: OmakaseAdminDashboardP
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="text-lg font-normal tracking-[0.2em] uppercase font-serif text-[#E8E4DC]">OMAKASE & COUNTER</h1>
-                <span className="text-[10px] font-mono px-2 py-0.5 bg-white/10 text-[#E8E4DC] border border-[#2C2C2A] font-bold">
+                <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 bg-white/10 text-[#E8E4DC] border border-[#2C2C2A] font-bold">
                   CHEF'S COUNTER ORCHESTRATION OS
                 </span>
               </div>
@@ -147,7 +147,7 @@ export default function OmakaseAdminDashboard({ onExit }: OmakaseAdminDashboardP
             </div>
             <button
               onClick={onExit}
-              className="flex items-center gap-2 px-4 py-2 border border-[#2C2C2A] bg-black/40 hover:bg-[#E8E4DC] hover:text-black hover:border-[#E8E4DC] text-xs font-mono tracking-wider transition-all duration-200 cursor-pointer"
+              className="flex items-center gap-2 px-5 py-3 min-h-[44px] border border-[#2C2C2A] bg-black/40 hover:bg-[#E8E4DC] hover:text-black hover:border-[#E8E4DC] text-base font-semibold min-h-[44px] font-mono tracking-wider transition-all duration-200 cursor-pointer"
             >
               <LogOut className="w-4 h-4" />
               <span>RETURN TO GUEST EXPERIENCE</span>
@@ -166,7 +166,7 @@ export default function OmakaseAdminDashboard({ onExit }: OmakaseAdminDashboardP
               <DollarSign className="w-4 h-4 text-[#E8E4DC]" />
             </div>
             <div className="text-2xl font-normal font-mono text-white">${totalRevenueTonight.toLocaleString()}</div>
-            <div className="text-[11px] font-mono text-emerald-400 mt-1 flex items-center gap-1">
+            <div className="text-xs font-semibold font-mono text-emerald-400 mt-1 flex items-center gap-1">
               <TrendingUp className="w-3 h-3" />
               <span>{totalSeatsTonight} of 16 Hinoki Seats Filled</span>
             </div>
@@ -178,7 +178,7 @@ export default function OmakaseAdminDashboard({ onExit }: OmakaseAdminDashboardP
               <Clock className="w-4 h-4 text-[#E8E4DC]" />
             </div>
             <div className="text-2xl font-normal font-mono text-[#E8E4DC]">93.8%</div>
-            <div className="text-[11px] font-mono text-stone-400 mt-1">5:30 PM & 8:15 PM Seatings</div>
+            <div className="text-xs font-semibold font-mono text-stone-400 mt-1">5:30 PM & 8:15 PM Seatings</div>
           </div>
 
           <div className="p-5 bg-[#141414] border border-[#2C2C2A] relative overflow-hidden">
@@ -187,7 +187,7 @@ export default function OmakaseAdminDashboard({ onExit }: OmakaseAdminDashboardP
               <Wine className="w-4 h-4 text-[#E8E4DC]" />
             </div>
             <div className="text-2xl font-normal font-mono text-white">100%</div>
-            <div className="text-[11px] font-mono text-emerald-400 mt-1">4 of 4 reservations paired</div>
+            <div className="text-xs font-semibold font-mono text-emerald-400 mt-1">4 of 4 reservations paired</div>
           </div>
 
           <div className="p-5 bg-[#141414] border border-[#2C2C2A] relative overflow-hidden">
@@ -196,7 +196,7 @@ export default function OmakaseAdminDashboard({ onExit }: OmakaseAdminDashboardP
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
             </div>
             <div className="text-2xl font-normal font-mono text-emerald-400">ACTIVE</div>
-            <div className="text-[11px] font-mono text-stone-400 mt-1">RLS Protected · Supabase 2.4</div>
+            <div className="text-xs font-semibold font-mono text-stone-400 mt-1">RLS Protected · Supabase 2.4</div>
           </div>
         </div>
 
@@ -255,7 +255,7 @@ export default function OmakaseAdminDashboard({ onExit }: OmakaseAdminDashboardP
                   <button
                     key={s}
                     onClick={() => setFilterStatus(s)}
-                    className={`px-2.5 py-1 text-[11px] border cursor-pointer ${
+                    className={`px-2.5 py-1 text-xs font-semibold border cursor-pointer ${
                       filterStatus === s
                         ? 'border-[#E8E4DC] bg-[#E8E4DC]/10 text-[#E8E4DC]'
                         : 'border-[#2C2C2A] text-stone-400 hover:text-white'
@@ -269,7 +269,7 @@ export default function OmakaseAdminDashboard({ onExit }: OmakaseAdminDashboardP
 
             <div className="overflow-x-auto border border-[#2C2C2A] bg-[#141414]">
               <table className="w-full text-left font-mono text-xs">
-                <thead className="bg-black/60 text-stone-400 border-b border-[#2C2C2A] uppercase tracking-wider text-[11px]">
+                <thead className="bg-black/60 text-stone-400 border-b border-[#2C2C2A] uppercase tracking-wider text-xs font-semibold">
                   <tr>
                     <th className="py-3 px-4">Code & Time</th>
                     <th className="py-3 px-4">Guest & Party</th>
@@ -284,25 +284,25 @@ export default function OmakaseAdminDashboard({ onExit }: OmakaseAdminDashboardP
                     <tr key={res.id} className="hover:bg-white/[0.02] transition-colors">
                       <td className="py-3 px-4">
                         <div className="font-bold text-[#E8E4DC]">{res.reservationCode}</div>
-                        <div className="text-[10px] text-stone-400">{res.seatingTime}</div>
+                        <div className="text-xs font-semibold tracking-wider text-stone-400">{res.seatingTime}</div>
                       </td>
                       <td className="py-3 px-4">
                         <div className="font-normal text-white">{res.guestName}</div>
-                        <div className="text-[10px] text-stone-500">{res.partySize} Guests · {res.guestPhone}</div>
+                        <div className="text-xs font-semibold tracking-wider text-stone-500">{res.partySize} Guests · {res.guestPhone}</div>
                       </td>
                       <td className="py-3 px-4">
-                        <div className="text-white text-[11px]">{res.courseSelection}</div>
-                        <div className="text-[10px] text-[#E8E4DC]/70">{res.sommelierPairing}</div>
+                        <div className="text-white text-xs font-semibold">{res.courseSelection}</div>
+                        <div className="text-xs font-semibold tracking-wider text-[#E8E4DC]/70">{res.sommelierPairing}</div>
                       </td>
                       <td className="py-3 px-4">
-                        <div className="text-stone-400 text-[11px] max-w-xs">{res.dietaryRestrictions}</div>
+                        <div className="text-stone-400 text-xs font-semibold max-w-xs">{res.dietaryRestrictions}</div>
                       </td>
                       <td className="py-3 px-4 font-mono font-bold text-white">
                         ${res.totalDeposit.toLocaleString()}
                       </td>
                       <td className="py-3 px-4">
                         <div className="flex items-center gap-2">
-                          <span className={`px-2 py-0.5 text-[10px] font-bold uppercase ${
+                          <span className={`px-2 py-0.5 text-xs font-semibold tracking-wider font-bold uppercase ${
                             res.status === 'Seated at Counter' ? 'bg-emerald-950/60 text-emerald-400 border border-emerald-800' :
                             res.status === 'Confirmed' ? 'bg-amber-950/60 text-amber-400 border border-amber-800' :
                             'bg-stone-800 text-stone-400'
@@ -312,7 +312,7 @@ export default function OmakaseAdminDashboard({ onExit }: OmakaseAdminDashboardP
                           <select
                             value={res.status}
                             onChange={(e) => handleUpdateStatus(res.id, e.target.value as OmakaseReservation['status'])}
-                            className="bg-black border border-[#2C2C2A] text-stone-300 px-1.5 py-0.5 text-[10px] focus:outline-none focus:border-[#E8E4DC]"
+                            className="bg-black border border-[#2C2C2A] text-stone-300 px-1.5 py-0.5 text-xs font-semibold tracking-wider focus:outline-none focus:border-[#E8E4DC]"
                           >
                             <option value="Confirmed">Mark Confirmed</option>
                             <option value="Seated at Counter">Seat at Counter</option>
@@ -346,7 +346,7 @@ export default function OmakaseAdminDashboard({ onExit }: OmakaseAdminDashboardP
                         : 'border-[#2C2C2A] bg-black/40 text-stone-500'
                     }`}
                   >
-                    <span className="text-[10px] text-stone-500">SEAT {seatNum}</span>
+                    <span className="text-xs font-semibold tracking-wider text-stone-500">SEAT {seatNum}</span>
                     <span className="font-bold text-sm">{isOccupied ? 'FILLED' : 'OPEN'}</span>
                     <span className="text-[9px]">{isOccupied ? 'Course 7 of 16' : 'Available'}</span>
                   </div>
@@ -368,17 +368,17 @@ export default function OmakaseAdminDashboard({ onExit }: OmakaseAdminDashboardP
                 <div className="p-4 bg-black/60 border border-[#2C2C2A]">
                   <div className="text-stone-500 mb-1">Gross Tasting Revenue</div>
                   <div className="text-2xl font-normal text-white">$142,800</div>
-                  <div className="text-stone-400 text-[11px] mt-1">26 operating evenings @ 98% cap</div>
+                  <div className="text-stone-400 text-xs font-semibold mt-1">26 operating evenings @ 98% cap</div>
                 </div>
                 <div className="p-4 bg-black/60 border border-[#2C2C2A]">
                   <div className="text-stone-500 mb-1">Rare Sake & Wine Pairings</div>
                   <div className="text-2xl font-normal text-[#E8E4DC]">$58,400</div>
-                  <div className="text-stone-400 text-[11px] mt-1">Average $165 pairing add-on</div>
+                  <div className="text-stone-400 text-xs font-semibold mt-1">Average $165 pairing add-on</div>
                 </div>
                 <div className="p-4 bg-black/60 border border-[#2C2C2A]">
                   <div className="text-stone-500 mb-1">Net Counter Operating Margin</div>
                   <div className="text-2xl font-normal text-emerald-400">48.2%</div>
-                  <div className="text-stone-400 text-[11px] mt-1">Zero third-party marketplace commissions</div>
+                  <div className="text-stone-400 text-xs font-semibold mt-1">Zero third-party marketplace commissions</div>
                 </div>
               </div>
             </div>

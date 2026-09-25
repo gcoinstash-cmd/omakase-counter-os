@@ -10,7 +10,7 @@ export default function Menu({ onSelectItem }: MenuProps) {
     <section id="menu" className="py-32 px-6 max-w-7xl mx-auto border-t border-muted-charcoal">
       <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-20 gap-4">
         <div>
-          <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-raw-silk/40 block mb-3">
+          <span className="font-sans text-xs font-semibold tracking-wider uppercase tracking-[0.4em] text-raw-silk/40 block mb-3">
             seasonal curation
           </span>
           <h2 className="title-section" id="menu-section-heading">
@@ -77,7 +77,7 @@ export default function Menu({ onSelectItem }: MenuProps) {
             </div>
 
             {/* Structured subtitle / Japanese translation helper */}
-            <span className="text-[10px] font-sans tracking-[0.25em] text-raw-silk/30 mt-1 uppercase select-none">
+            <span className="text-xs font-semibold tracking-wider font-sans tracking-[0.25em] text-raw-silk/30 mt-1 uppercase select-none">
               {item.japaneseName}
             </span>
 
@@ -90,7 +90,7 @@ export default function Menu({ onSelectItem }: MenuProps) {
             </p>
 
             {/* Delicate opacity and translate arrow slider interaction */}
-            <div className="mt-4 pt-1 flex items-center text-[10px] tracking-[0.22em] uppercase text-raw-silk/50 group-hover:text-raw-silk group-hover:opacity-100 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] font-mono">
+            <div className="mt-4 pt-1 flex items-center text-xs font-semibold tracking-wider tracking-[0.22em] uppercase text-raw-silk/50 group-hover:text-raw-silk group-hover:opacity-100 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] font-mono">
               <span className="border-b border-raw-silk/10 group-hover:border-raw-silk/75 transition-colors duration-500">view details</span>
               <span className="ml-1 transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] transform group-hover:translate-x-[3px]">→</span>
             </div>

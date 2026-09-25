@@ -123,7 +123,7 @@ export default function App() {
 
             <form onSubmit={handleAdminUnlock} className="space-y-4">
               <div>
-                <label className="block text-[11px] text-stone-300 uppercase tracking-wider mb-2">
+                <label className="block text-sm font-semibold text-stone-300 uppercase tracking-wider mb-2">
                   Enter Counter Access Passkey
                 </label>
                 <input
@@ -136,7 +136,7 @@ export default function App() {
                 />
               </div>
 
-              <div className="p-3 bg-black/40 border border-[#2C2C2A] text-[11px]">
+              <div className="p-3 bg-black/40 border border-[#2C2C2A] text-xs font-semibold">
                 <div className="text-stone-400 mb-1 flex items-center justify-between">
                   <span>DEMO CHEAT CODE:</span>
                   <span className="text-stone-500">(1-Click Fill)</span>
@@ -147,14 +147,14 @@ export default function App() {
                   className="w-full py-1.5 px-2 bg-white/5 hover:bg-white/10 border border-[#2C2C2A] text-raw-silk font-bold text-left flex items-center justify-between cursor-pointer"
                 >
                   <span>omakase2026</span>
-                  <span className="text-[10px] uppercase underline">AUTO-FILL</span>
+                  <span className="text-xs font-semibold tracking-wider uppercase underline">AUTO-FILL</span>
                 </button>
               </div>
 
               <div className="flex items-center gap-3 pt-2">
                 <button
                   type="submit"
-                  className="flex-1 py-2.5 bg-raw-silk hover:bg-white text-black font-bold text-xs uppercase tracking-wider transition-colors cursor-pointer"
+                  className="flex-1 py-2.5 bg-raw-silk hover:bg-white text-black font-bold text-base font-semibold min-h-[44px] uppercase tracking-wider transition-colors cursor-pointer"
                 >
                   Authorize Session
                 </button>

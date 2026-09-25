@@ -50,7 +50,7 @@ export default function Reserve() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
         {/* Reservation instructions column */}
         <div className="lg:col-span-5">
-          <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-raw-silk/40 block mb-3">
+          <span className="font-sans text-xs font-semibold tracking-wider uppercase tracking-[0.4em] text-raw-silk/40 block mb-3">
             reservation request
           </span>
           <h2 className="title-section mb-8">
@@ -70,7 +70,7 @@ export default function Reserve() {
           </div>
 
           <div className="mt-12 p-6 border border-muted-charcoal/70 bg-sumi-ink flex items-center justify-between">
-            <span className="text-[10px] tracking-[0.2em] uppercase text-raw-silk/50 font-mono">service charge</span>
+            <span className="text-xs font-semibold tracking-wider tracking-[0.2em] uppercase text-raw-silk/50 font-mono">service charge</span>
             <span className="font-sans text-xs tracking-wider">included / hospitality-included model</span>
           </div>
         </div>
@@ -138,7 +138,7 @@ export default function Reserve() {
                 </span>
                 <button
                   onClick={() => setFormSubmitted(false)}
-                  className="w-full text-center hover:bg-raw-silk hover:text-sumi-ink bg-transparent text-raw-silk border border-raw-silk py-3 text-[10px] tracking-widest font-mono uppercase transition-all duration-500"
+                  className="w-full text-center hover:bg-raw-silk hover:text-sumi-ink bg-transparent text-raw-silk border border-raw-silk py-3 text-xs font-semibold tracking-wider tracking-widest font-mono uppercase transition-all duration-500"
                   style={{ borderRadius: "0px" }}
                 >
                   request another slot
@@ -154,7 +154,7 @@ export default function Reserve() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Full name */}
                 <div className="flex flex-col space-y-2">
-                  <label htmlFor="name-input" className="text-[10px] uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
+                  <label htmlFor="name-input" className="text-sm font-semibold tracking-wider uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
                     full name / patron
                   </label>
                   <input
@@ -165,13 +165,13 @@ export default function Reserve() {
                     placeholder="Honored Guest Name"
                     value={inputs.name}
                     onChange={handleInputChange}
-                    className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-muted-charcoal focus:border-raw-silk focus:ring-0 text-raw-silk text-xs px-0 py-3 placeholder:text-raw-silk/25 tracking-wider focus:outline-none transition-colors duration-500"
+                    className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-muted-charcoal focus:border-raw-silk focus:ring-0 text-raw-silk text-base min-h-[44px] px-0 py-3 placeholder:text-raw-silk/25 tracking-wider focus:outline-none transition-colors duration-500"
                   />
                 </div>
 
                 {/* Email address */}
                 <div className="flex flex-col space-y-2">
-                  <label htmlFor="email-input" className="text-[10px] uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
+                  <label htmlFor="email-input" className="text-sm font-semibold tracking-wider uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
                     email address
                   </label>
                   <input
@@ -182,7 +182,7 @@ export default function Reserve() {
                     placeholder="patron@example.com"
                     value={inputs.email}
                     onChange={handleInputChange}
-                    className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-muted-charcoal focus:border-raw-silk focus:ring-0 text-raw-silk text-xs px-0 py-3 placeholder:text-raw-silk/25 tracking-wider font-mono focus:outline-none transition-colors duration-500"
+                    className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-muted-charcoal focus:border-raw-silk focus:ring-0 text-raw-silk text-base min-h-[44px] px-0 py-3 placeholder:text-raw-silk/25 tracking-wider font-mono focus:outline-none transition-colors duration-500"
                   />
                 </div>
               </div>
@@ -190,7 +190,7 @@ export default function Reserve() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Contact phone */}
                 <div className="flex flex-col space-y-2">
-                  <label htmlFor="phone-input" className="text-[10px] uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
+                  <label htmlFor="phone-input" className="text-sm font-semibold tracking-wider uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
                     contact phone
                   </label>
                   <input
@@ -201,13 +201,13 @@ export default function Reserve() {
                     placeholder="+1 (555) 0192"
                     value={inputs.phone}
                     onChange={handleInputChange}
-                    className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-muted-charcoal focus:border-raw-silk focus:ring-0 text-raw-silk text-xs px-0 py-3 placeholder:text-raw-silk/25 tracking-wider font-mono focus:outline-none transition-colors duration-500"
+                    className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-muted-charcoal focus:border-raw-silk focus:ring-0 text-raw-silk text-base min-h-[44px] px-0 py-3 placeholder:text-raw-silk/25 tracking-wider font-mono focus:outline-none transition-colors duration-500"
                   />
                 </div>
 
                 {/* Requested Date */}
                 <div className="flex flex-col space-y-2">
-                  <label htmlFor="date-input" className="text-[10px] uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
+                  <label htmlFor="date-input" className="text-sm font-semibold tracking-wider uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
                     calendar date
                   </label>
                   <input
@@ -217,7 +217,7 @@ export default function Reserve() {
                     required
                     value={inputs.date}
                     onChange={handleInputChange}
-                    className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-muted-charcoal focus:border-raw-silk focus:ring-0 text-raw-silk text-xs px-0 py-3 font-mono focus:outline-none transition-colors duration-500"
+                    className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-muted-charcoal focus:border-raw-silk focus:ring-0 text-raw-silk text-base min-h-[44px] px-0 py-3 font-mono focus:outline-none transition-colors duration-500"
                   />
                 </div>
               </div>
@@ -225,7 +225,7 @@ export default function Reserve() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Covers Count */}
                 <div className="flex flex-col space-y-2">
-                  <label htmlFor="guests-select" className="text-[10px] uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
+                  <label htmlFor="guests-select" className="text-sm font-semibold tracking-wider uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
                     covers count
                   </label>
                   <select
@@ -233,7 +233,7 @@ export default function Reserve() {
                     name="guests"
                     value={inputs.guests}
                     onChange={handleInputChange}
-                    className="w-full bg-sumi-ink border-t-0 border-l-0 border-r-0 border-b border-muted-charcoal focus:border-raw-silk focus:ring-0 text-raw-silk text-xs px-0 py-3 tracking-wider appearance-none cursor-pointer focus:outline-none transition-colors duration-500"
+                    className="w-full bg-sumi-ink border-t-0 border-l-0 border-r-0 border-b border-muted-charcoal focus:border-raw-silk focus:ring-0 text-raw-silk text-base min-h-[44px] px-0 py-3 tracking-wider appearance-none cursor-pointer focus:outline-none transition-colors duration-500"
                     style={{ borderRadius: "0px" }}
                   >
                     {guestOptions.map((opt) => (
@@ -246,7 +246,7 @@ export default function Reserve() {
 
                 {/* Seating Times */}
                 <div className="flex flex-col space-y-2">
-                  <span className="text-[10px] uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
+                  <span className="text-xs font-semibold tracking-wider uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
                     seating slot
                   </span>
                   <div className="flex gap-4">
@@ -271,7 +271,7 @@ export default function Reserve() {
 
               {/* Special dietary remarks */}
               <div className="flex flex-col space-y-2">
-                <label htmlFor="dietary-input" className="text-[10px] uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
+                <label htmlFor="dietary-input" className="text-sm font-semibold tracking-wider uppercase tracking-[0.3em] text-raw-silk/40 block font-mono">
                   Dietary Nuances & Requests
                 </label>
                 <textarea
@@ -281,7 +281,7 @@ export default function Reserve() {
                   placeholder="list severe seafood, soy, or gluten dietary warnings if any..."
                   value={inputs.dietary}
                   onChange={handleInputChange}
-                  className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-muted-charcoal focus:border-raw-silk focus:ring-0 text-raw-silk text-xs px-0 py-3 placeholder:text-raw-silk/25 tracking-wider resize-none focus:outline-none transition-colors duration-500"
+                  className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-muted-charcoal focus:border-raw-silk focus:ring-0 text-raw-silk text-base min-h-[44px] px-0 py-3 placeholder:text-raw-silk/25 tracking-wider resize-none focus:outline-none transition-colors duration-500"
                   style={{ borderRadius: "0px" }}
                 />
               </div>
@@ -298,7 +298,7 @@ export default function Reserve() {
                   className="w-4 h-4 mt-0.5 border border-muted-charcoal bg-transparent text-raw-silk focus:ring-0 cursor-pointer appearance-none checked:bg-raw-silk checked:border-raw-silk"
                   style={{ borderRadius: "0px" }}
                 />
-                <label htmlFor="consent-checkbox" className="text-[11px] leading-relaxed text-raw-silk/50 cursor-pointer select-none">
+                <label htmlFor="consent-checkbox" className="text-sm font-semibold leading-relaxed text-raw-silk/50 cursor-pointer select-none">
                   i acknowledge that seatings start precisely on time. cancellations within 72 hours are subject to a standard ingredients purveyance forfeiture fine.
                 </label>
               </div>
@@ -306,7 +306,7 @@ export default function Reserve() {
               <button
                 type="submit"
                 disabled={isPending}
-                className="w-full relative flex items-center justify-center bg-transparent border border-raw-silk text-raw-silk hover:bg-raw-silk hover:text-sumi-ink transition-all duration-500 py-4 text-xs tracking-[0.25em] font-serif uppercase cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-transparent disabled:text-raw-silk/40 disabled:border-muted-charcoal"
+                className="w-full relative flex items-center justify-center bg-transparent border border-raw-silk text-raw-silk hover:bg-raw-silk hover:text-sumi-ink transition-all duration-500 py-4 text-base font-semibold min-h-[44px] tracking-[0.25em] font-serif uppercase cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-transparent disabled:text-raw-silk/40 disabled:border-muted-charcoal"
                 style={{ borderRadius: "0px" }}
               >
                 <span className={`transition-opacity duration-300 ${isPending ? "opacity-0" : "opacity-100"}`}>

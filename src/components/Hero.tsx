@@ -52,7 +52,7 @@ export default function Hero({ onReserveClick }: HeroProps) {
 
       {/* Vertical scroll-down indicator matching the zen micro-line rule */}
       <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center">
-        <span className="text-[10px] tracking-[0.3em] uppercase text-raw-silk/30 mb-4 font-sans">scroll</span>
+        <span className="text-xs font-semibold tracking-wider tracking-[0.3em] uppercase text-raw-silk/30 mb-4 font-sans">scroll</span>
         <div className="w-px h-12 bg-muted-charcoal/60" />
       </div>
     </section>

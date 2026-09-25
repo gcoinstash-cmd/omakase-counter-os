@@ -39,7 +39,7 @@ export default function ItemModal({ item, onClose }: ItemModalProps) {
         {/* Close Button Top Right */}
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 text-xs uppercase tracking-[0.25em] text-raw-silk/50 hover:text-raw-silk bg-transparent border-none p-2 select-none"
+          className="absolute top-6 right-6 text-base font-semibold min-h-[44px] uppercase tracking-[0.25em] text-raw-silk/50 hover:text-raw-silk bg-transparent border-none p-2 select-none"
           id="close-modal-btn"
           aria-label="Close modal dialog"
         >
@@ -62,7 +62,7 @@ export default function ItemModal({ item, onClose }: ItemModalProps) {
           {/* Right: Detailed text & Sake Pairing */}
           <div className="md:col-span-7 flex flex-col h-full justify-between">
             <div>
-              <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-raw-silk/40 block mb-2">
+              <span className="font-sans text-xs font-semibold tracking-wider uppercase tracking-[0.4em] text-raw-silk/40 block mb-2">
                 origin: {item.curation}
               </span>
               <h3 className="text-2xl font-serif text-raw-silk leading-tight lowercase tracking-[0.08em] mb-1">
@@ -89,7 +89,7 @@ export default function ItemModal({ item, onClose }: ItemModalProps) {
                 <span className="text-[9px] font-mono tracking-[0.2em] text-raw-silk/50 block mb-3 uppercase">
                   {pairing.temp}
                 </span>
-                <p className="text-[11px] font-sans text-raw-silk/60 leading-relaxed lowercase tracking-wide">
+                <p className="text-xs font-semibold font-sans text-raw-silk/60 leading-relaxed lowercase tracking-wide">
                   {pairing.notes}
                 </p>
               </div>

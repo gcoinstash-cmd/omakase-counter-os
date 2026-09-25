@@ -48,7 +48,7 @@ export default function Header({ onReserveClick, onOpenAdminPass }: HeaderProps)
           {onOpenAdminPass && (
             <button
               onClick={onOpenAdminPass}
-              className="text-xs uppercase font-mono tracking-[0.2em] text-raw-silk/80 hover:text-white border border-[#2C2C2A] hover:border-raw-silk px-3 py-1.5 transition-all duration-300 cursor-pointer"
+              className="text-base font-semibold min-h-[44px] uppercase font-mono tracking-[0.2em] text-raw-silk/80 hover:text-white border border-[#2C2C2A] hover:border-raw-silk px-3 py-1.5 transition-all duration-300 cursor-pointer"
             >
               [ ADMIN PASS ]
             </button>

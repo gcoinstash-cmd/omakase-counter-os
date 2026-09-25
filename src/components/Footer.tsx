@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-xs font-sans text-raw-silk/55 lowercase tracking-wide">
         {/* Timing Information */}
         <div className="space-y-4">
-          <span className="text-[10px] uppercase tracking-[0.3em] text-raw-silk/40 block">
+          <span className="text-xs font-semibold tracking-wider uppercase tracking-[0.3em] text-raw-silk/40 block">
             session times
           </span>
           <div className="space-y-1">
@@ -21,7 +21,7 @@ export default function Footer() {
 
         {/* Location coordinates */}
         <div className="space-y-4">
-          <span className="text-[10px] uppercase tracking-[0.3em] text-raw-silk/40 block">
+          <span className="text-xs font-semibold tracking-wider uppercase tracking-[0.3em] text-raw-silk/40 block">
             the sanctuary
           </span>
           <div className="space-y-1">
@@ -34,7 +34,7 @@ export default function Footer() {
         {/* Minimal Social letters/Inquiries */}
         <div className="space-y-4 flex flex-col justify-between">
           <div>
-            <span className="text-[10px] uppercase tracking-[0.3em] text-raw-silk/40 block mb-3">
+            <span className="text-xs font-semibold tracking-wider uppercase tracking-[0.3em] text-raw-silk/40 block mb-3">
               transmission
             </span>
             <div className="flex gap-6">
@@ -43,7 +43,7 @@ export default function Footer() {
               <a href={RESTaurant_CONFIG.privacyUrl} className="hover:text-raw-silk transition-colors">legal privacy</a>
             </div>
           </div>
-          <p className="text-[10px] text-raw-silk/30 tracking-wider">
+          <p className="text-xs font-semibold tracking-wider text-raw-silk/30 tracking-wider">
             &copy; 1889—2026 {RESTaurant_CONFIG.name} llc. the quiet art of subtraction.
           </p>
         </div>

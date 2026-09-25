@@ -26,7 +26,7 @@ export default function Concept() {
         {/* Left Column Description */}
         <div className="lg:col-span-5 flex flex-col justify-start space-y-8 lg:sticky lg:top-32">
           <div>
-            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-raw-silk/40 block mb-3">
+            <span className="font-sans text-xs font-semibold tracking-wider uppercase tracking-[0.5em] text-raw-silk/40 block mb-3">
               our core philosophy
             </span>
             <h2 className="title-section mb-6 text-3xl font-serif tracking-[0.12em] lowercase text-raw-silk">
@@ -61,7 +61,7 @@ export default function Concept() {
                 className="border-b border-muted-charcoal/60 pb-16 flex flex-col md:flex-row gap-6 md:gap-16 items-start"
                 id={`concept-principle-${pr.subtitle.toLowerCase().replace(/\s+/g, '-')}`}
               >
-                <div className="font-sans text-[10px] tracking-[0.35em] text-raw-silk/35 min-w-[8rem] uppercase pt-1">
+                <div className="font-sans text-xs font-semibold tracking-wider tracking-[0.35em] text-raw-silk/35 min-w-[8rem] uppercase pt-1">
                   {pr.subtitle}
                 </div>
                 <div className="space-y-4 flex-1">
